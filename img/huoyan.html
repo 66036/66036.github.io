@@ -17,7 +17,7 @@
 	.menu--open span:nth-child(3){transform:translate(2px,0) rotate(-45deg)}
 </style>
 <canvas></canvas>
-<div class="menu" style="display:none;">
+<div class="menu" style="display:none !important;">
 	<button>
 		<div class="icon"><span></span><span></span><span></span></div>
 	</button>
@@ -27,7 +27,7 @@
 	</label>
 	<label>
 		Upper Velocity Bounds
-		<input type="range" min="1" max="50" step="1" value="30" id="UPPER_LIMIT">
+		<input type="range" min="1" max="50" step="1" value="10" id="UPPER_LIMIT">
 	</label>
 	<label>
 		Lower Velocity Bounds
@@ -67,7 +67,7 @@
 
 	var OPTIONS = {
 		AMOUNT: 200,
-		UPPER_LIMIT: 30,
+		UPPER_LIMIT: 10,
 		LOWER_LIMIT: 1
 	};
 
